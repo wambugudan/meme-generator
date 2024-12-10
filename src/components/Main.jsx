@@ -1,4 +1,5 @@
 import { useState } from "react"
+import DisplayApiData from "./exercise/DisplayApiData"
 
 
 export default function Main(){
@@ -19,6 +20,14 @@ export default function Main(){
         }))
     }
 
+    const handleChangeBottom = function(event){
+        const {value} = event.currentTarget
+        setMemeItem(prevState => ({
+            ...prevState,
+            bottom_text: value,
+        }))
+    }
+
     return(
         <div className="meme-body-container">
             <form action="">
@@ -29,7 +38,7 @@ export default function Main(){
 
                 <div className="inputs">
                     <label htmlFor="bottom-text">Botton Text</label>
-                    <input type="text" placeholder="Si pite" name="bottom-text" />
+                    <input type="text" value={memeItem.bottom_text} onChange={handleChangeBottom} placeholder="Si pite" name="bottom-text" />
                 </div>
             </form>
 
@@ -42,6 +51,11 @@ export default function Main(){
                 <span className="top-text">{memeItem.top_text}</span>
                 <span className="bottom-text">{memeItem.bottom_text}</span>
             </div>
+
+            {/* Display Execise component */}
+
+            <DisplayApiData />
+
         </div>
     )
 }

@@ -25,21 +25,21 @@ body{
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 50%;
+  width: 80%;
 }
 
 .meme-body-container > form{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
-  margin: 20px 70px;
-
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.inputs > lebel, input{
+.inputs *{
   display: block;
-  margin-right: 70px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .inputs > input{
@@ -52,6 +52,7 @@ body{
 .btn{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 button{
@@ -60,8 +61,10 @@ button{
   background-color: #E88CE5;
   border: 0;
   border-radius: 10px;
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
+  cursor: pointer;  
 }
+
 
 .meme-image-container{
   position: relative;
@@ -72,9 +75,8 @@ button{
 }
 
 .meme-image-container > img{
-  width: 520px;
+  width: 500px;
   margin-top: 30px;
-  margin-left: 30px;
   border-radius: 10px;
   position: relative;
   text-align: center;
