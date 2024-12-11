@@ -76,6 +76,7 @@ button{
 
 .meme-image-container > img{
   width: 500px;
+  height: 300px;
   margin-top: 30px;
   border-radius: 10px;
   position: relative;
@@ -84,7 +85,7 @@ button{
 
 .top-text{
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
